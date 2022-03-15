@@ -1,4 +1,4 @@
-from main import app
+from flask_tech_talk import app 
 import pytest
 
 
