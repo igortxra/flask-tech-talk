@@ -1,5 +1,5 @@
-from . import bp_hello
 from flask import request
+from flask_tech_talk.hello import bp_hello
 
 
 @bp_hello.route("/")

@@ -1,10 +1,10 @@
-from . import bp_welcome
 from flask import request
+from flask_tech_talk.welcome import bp_welcome
 
 
-@bp_welcome.route("/", methods=["GET"])
+@bp_welcome.route("/")
 def welcome_world():
-    return f"<p>Welcome, World!</p>"
+    return "<p>Welcome, World!</p>"
 
 
 @bp_welcome.route("/name", methods=['POST'])
