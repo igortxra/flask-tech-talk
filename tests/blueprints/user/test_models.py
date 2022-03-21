@@ -1,5 +1,4 @@
-from flask_tech_talk.user.models import User
-from flask_tech_talk import app, db
+from flask_tech_talk.blueprints.user.models import User
 
 
 def test_user_instanciation():

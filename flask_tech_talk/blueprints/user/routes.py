@@ -1,10 +1,8 @@
 from flask import request
-from flask_tech_talk import db
-from flask_tech_talk.user import bp_user
-from flask_tech_talk.user.models import User
+from flask_tech_talk.ext.database import db
+from flask_tech_talk.blueprints.user.models import User
 
 
-@bp_user.route('/insert', methods=['POST'])
 def insert_user():
     json_data = request.json or {}
     name = json_data.get("name")
@@ -18,7 +16,6 @@ def insert_user():
     return f"User {name} inserted"
 
 
-@bp_user.route('/get')
 def get_users():
     users = User.query.all()
     

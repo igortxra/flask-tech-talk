@@ -1,4 +1,4 @@
-from flask_tech_talk import db
+from flask_tech_talk.ext.database import db
 
 
 class User(db.Model):
