@@ -1,0 +1,13 @@
+[default]
+name = ""
+SQLALCHEMY_DATABASE_URI = "sqlite:///dev.db"
+SQLALCHEMY_TRACK_MODIFICATIONS = "False"
+
+[testing]
+name = "testing"
+SQLALCHEMY_DATABASE_URI = "sqlite:///testing.db"
+TESTING = "True"
+
+[production]
+name = "prod"
+SQLALCHEMY_DATABASE_URI = "sqlite:///production.db"
